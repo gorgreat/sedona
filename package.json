@@ -1,7 +1,6 @@
 {
-  "name": "bardershop",
+  "name": "sedona",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,17 +8,27 @@
   "author": "Egor Makarov",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.24.4",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
+    "gulp-autoprefixer": "^4.1.0",
     "gulp-cache": "^0.4.6",
     "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-imagemin": "^3.3.0",
-    "gulp-less": "^3.3.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-less": "^3.5.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglifyjs": "^0.6.2",
-    "imagemin-pngquant": "^5.0.1"
-  }
+    "imagemin-pngquant": "^5.1.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorgreat/sedona.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gorgreat/sedona/issues"
+  },
+  "homepage": "https://github.com/gorgreat/sedona#readme",
+  "description": ""
 }
