@@ -1,0 +1,148 @@
+.features__item-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item-img__blue {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 60px 30px 45px;
+  background-color: @bluecolor;
+}
+.item__title {
+  color: @whitecolor;
+  font-family: @fontbold;
+  font-weight: normal;
+  font-size: 18px;
+}
+.feature__triangle {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left:0;
+    height: 20px;
+    border: 160px solid transparent; 
+    border-top: 24px solid @whitecolor; 
+  }
+}
+.item__title-white {
+  text-align: center;
+}
+.item__number {
+  text-align: center;
+  color: @whitecolor;
+}
+.item__text {
+}
+.item__text-white {
+  text-align: center;
+  color: @whitecolor;
+}
+.item__img {
+  width: 100%;
+  height: 264px;
+  background-repeat: no-repeat;  
+  background-size: cover;     
+}
+.item__img--right {
+  background-image: url(../img/features_img01.jpg);
+}
+.features__items {
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.features__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.feature__img {
+  width: 39px;
+  height: 39px;
+  margin-right: 20px;
+}
+
+.item__title-black {
+  width: 100%;
+  color: @blackcolor;
+}
+
+.item__img--left {
+  background-image: url(../img/features_img02.jpg);
+}
+.features__items-gray {
+  padding: 20px;
+  background-color: @darkgraycolor;
+}
+.item__number-black {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: @blackcolor;
+}
+.item__gray {
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #d6d6d6;
+  &:last-child {
+    border: none;
+  }
+}
+
+
+@media @tablet-widths { 
+  .features__item-img {
+    flex-wrap: nowrap;
+  }
+  .item-img__blue {
+    max-width: 260px;
+    padding: 40px;
+  }
+  .item__img {
+    width: 100%;
+  }
+  .feature__triangle {
+    &::before {
+      display: none;
+    }
+  }
+  .features__items {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .features__item {
+    width: 260px;
+    display: block;
+    text-align: center;
+  }
+  .feature__img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+  .item__title-black {
+    font-size: 21px;
+  }
+  .item__gray {
+    border: none;
+  }
+}
+@media @desktop-widths { 
+  .item-img__blue {
+    padding: 55px 70px;
+    max-width: 400px;
+  }
+  .item__img {
+    width: 100%;
+  }
+  .features__items {
+    padding: 60px;
+  }
+  .features__item { 
+    width: 260px;
+  }
+}
