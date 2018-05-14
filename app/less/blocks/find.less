@@ -1,0 +1,50 @@
+.find {
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+.find__title {
+  font-family: @fontbold;
+  font-size: 21px;
+  text-align: center;
+}
+.find__text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.find__btn {
+  width: 100%;
+  padding: 20px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: @whitecolor;
+  font-family: @fontbold;
+  text-align: center;
+  font-size: 21px;
+  text-transform: uppercase;
+  background-color: @bluecolor;
+  &:hover {
+    background-color: darken(@bluecolor, 5%);
+  }
+  &:active {
+    color: lighten(@whitecolor, 10%);
+    background-color: darken(@bluecolor, 15%);
+  }
+}
+
+@media @tablet-widths { 
+  .find__title {
+    font-size: 30px;
+  }
+  .find__text {
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .find__btn {
+    display: block;
+    width: 460px;
+    margin: 0 auto;
+  }
+  
+}
