@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Sedona</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Отзывы. Седона. Учебный макет">
+  <meta name="keywords" content="">
+  <meta name="author" content="Egor Makarov">
+  <meta name="copyright" content="www.egormakarov.ru">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel=icon href=img/favicon.png sizes="16x16" type="image/png">
+  <link rel=icon href=img/favicon.ico sizes="32x32" type="image/vnd.microsoft.icon">
+  <link rel=icon href=img/favicon.svg sizes="any" type="image/svg+xml">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/picturefill.min.js"></script>
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="wrapper inner__wrapper">
+    <header class="page__header">
+      <nav class="main__nav">
+        <ul class="nav__items">
+          <button class="close__btn" type="button"></button>
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="photo.html" class="nav__link">Фото и видео</a></li>
+          <li class="nav__item  nav__item-logo"><a href="index.html" class="logo__link"></a></li>
+          <li class="nav__item"><a class="nav__link">Форма отзыва</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Html academy</a></li>
+        </ul>
+      </nav>
+      <div class="mobile__logo">
+        <a href="#" class="mobile__logo-link"><img src="img/logotyle-mobile.svg" width="102" height="84" alt="Sedona"></a>
+        <button class="toogle" type="button"></button>
+      </div>
+    </header>
+    <section class="intro intro__inner">
+      <picture>
+        <img class="intro__img" src="img/sedona_text.svg" width="230" height="40" alt="Sedona">
+      </picture>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/intro-triangle_desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/triangle_tablet.svg">
+        <img class="intro__triangle" src="img/intro-triangle.svg" alt="">
+      </picture>
+    </section>
+
+    <section class="page__name">
+      <h1 class="page__title">Оставьте свой отзыв</h1>
+      <p class="page__title-intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+    
+    <section class="reviews">
+      <form action="" class="reviews__form">
+        <div class="reviews__item  reviews__item-name">
+          <h3 class="reviews__title">Представьтесь, пожалуйста:</h3>
+          <div class="reviews__row">
+            <label for="name" class="reviews__label">Имя:</label>
+            <input type="text" id="name" class="reviews__input" placeholder="Константин">
+          </div>
+          <div class="reviews__row">
+            <label for="sename" class="reviews__label">Фамилия:</label>
+            <input type="text" id="sename" class="reviews__input" placeholder="Константинов">
+          </div>   
+          <div class="reviews__row">
+            <label for="patronymic" class="reviews__label">Отчество:</label>
+            <input type="text" id="patronymic" class="reviews__input" placeholder="Константинович">
+          </div>                  
+        </div>
+        <div class="reviews__item  reviews__item-contact">
+          <h3 class="reviews__title">Контактная информация:</h3>
+          <div class="reviews__row">
+            <label for="phone" class="reviews__label  reviews__label-contact">Контактный телефон:</label>
+            <input type="tel" id="phone" class="reviews__input" placeholder="Введите телефон">
+            <p class="error">Ошибка, перепроверьте номер</p>
+          </div>
+          <div class="reviews__row">
+            <label for="email" class="reviews__label  reviews__label-contact">Электронная почта:</label>
+            <input type="email" id="email" class="reviews__input" placeholder="Введите e-mail">
+            <p class="error">Ошибка, e-mail неверный</p>            
+          </div>                  
+        </div>   
+        <div class="reviews__item  reviews__item-impression">
+          <h3 class="reviews__title">Ваше общее впечатление:</h3>
+          <div class="reviews__row">
+            <input type="radio" id="radiobutton-item01" class="reviews__checkbox">           
+            <label for="radiobutton-item01" class="reviews__label  reviews__label-impression">Скорее положительное</label>
+          </div>   
+          <div class="reviews__row">
+            <input type="radio" id="radiobutton-item02" class="reviews__checkbox">           
+            <label for="radiobutton-item02" class="reviews__label  reviews__label-impression">Скорее отрицательное</label>
+          </div>    
+          <div class="reviews__row">
+            <input type="radio" id="radiobutton-item03" class="reviews__checkbox">           
+            <label for="radiobutton-item03" class="reviews__label  reviews__label-impression">Затрудняюсь ответить</label>
+          </div>                             
+        </div>   
+        <div class="reviews__item  reviews__item-visit">
+          <h3 class="reviews__title">Посещенные достопримечательности:</h3>
+          <div class="reviews__row">
+            <input type="checkbox" id="checkbox-item01" class="reviews__checkbox">           
+            <label for="checkbox-item01" class="reviews__label  reviews__label-impression">Мост Дьявола</label>
+          </div>   
+          <div class="reviews__row">
+            <input type="checkbox" id="checkbox-item02" class="reviews__checkbox">           
+            <label for="checkbox-item02" class="reviews__label  reviews__label-impression">Слайд-парк</label>
+          </div>    
+          <div class="reviews__row">
+            <input type="checkbox" id="checkbox-item03" class="reviews__checkbox">           
+            <label for="checkbox-item03" class="reviews__label  reviews__label-impression">Гора-Колокол</label>
+          </div>
+          <div class="reviews__row">
+            <input type="checkbox" id="checkbox-item04" class="reviews__checkbox">           
+            <label for="checkbox-item04" class="reviews__label  reviews__label-impression">Красные скалы</label>
+          </div>                                       
+        </div>  
+        <div class="reviews__item  reviews__item-emotion">
+          <h3 class="reviews__title">Опишите свои эмоции:</h3>
+          <textarea name="" class="reviews__textarea" placeholder="Опишите подробно все свои восторги"></textarea>                                      
+        </div>                         
+        <button class="reviews__submit" type="submit">Отправить отзыв</button> 
+      </form>
+    </section>
+
+    
+
+
+
+  
+    <footer class="footer">
+      <div class="footer__item">
+        <a href="#" class="footer__hash" target="_blank">#visitsedona</a>
+      </div>
+      <div class="footer__item social">
+        <ul class="social__items">
+          <li class="social__item"><a href="#" class="social__link  social__link-tw">Twitter</a></li>
+          <li class="social__item"><a href="#" class="social__link  social__link-fs">Facebook</a></li>
+          <li class="social__item"><a href="#" class="social__link  social__link-ut">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="footer__item copyright__item">
+        <p class="copyright">Разработано <span><a class="copyright__img" href="#">Html academy</a></span></p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/toogle.js"></script>
+
+</body>
+
+</html>
