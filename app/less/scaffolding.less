@@ -22,14 +22,41 @@ body {
   font-family: @bodyfont;
   font-size: 14px;
   line-height: 21px;
-  color: @textcolor;  
+  color: @textcolor;
   text-transform: uppercase;
   background-color: @bodycolor;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 100;
 }
 
+::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
 
+::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
 
+:-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
